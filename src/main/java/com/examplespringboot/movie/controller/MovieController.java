@@ -36,4 +36,8 @@ public class MovieController {
     }
 
     //Delete to be written by TDD approach
+    @DeleteMapping("/{id}")
+    public void deleteMovie(@PathVariable("id") Long id){
+        movieService.deleteMovie(id);
+    }
 }
